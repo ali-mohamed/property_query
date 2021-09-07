@@ -1,0 +1,19 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "bin/*"
+    - "db/**/*"
+    - "**/Gemfile"
+  TargetRubyVersion: 3.0
+
+Layout/LineLength:
+  Max: 120
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - spec/**/*
+Rails/FilePath:
+  EnforcedStyle: arguments
