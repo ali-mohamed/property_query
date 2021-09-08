@@ -1,0 +1,20 @@
+default: &default
+  pool: 5
+  timeout: 5000
+  adapter: postgresql
+  encoding: unicode
+  username: USERNAME
+  password: PASSWORD
+
+development:
+  <<: *default
+  database: property_query_development
+
+test:
+  <<: *default
+  database: property_query_test
+
+production:
+  <<: *default
+  database: property_query_production
+  
