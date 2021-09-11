@@ -13,17 +13,18 @@ gem 'activerecord-postgres-earthdistance'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 2.7'
+
+# Build JSON objects with fast JSON:API serializer
+gem 'jsonapi-serializer'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
-# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
-
 # Nicer console
 gem 'pry-rails'
+
+# Encapsulate business logic
+gem 'interactor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -34,6 +35,9 @@ group :development, :test do
 
   # Use RSpec for testing
   gem 'rspec-rails'
+
+  # Create model instances using FactoryBot
+  gem 'factory_bot_rails'
 
   # Let Rubocop control code style
   gem 'rubocop', require: false

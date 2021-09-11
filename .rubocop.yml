@@ -11,9 +11,12 @@ AllCops:
 
 Layout/LineLength:
   Max: 120
-Metrics/BlockLength:
-  Enabled: true
-  Exclude:
-    - spec/**/*
 Rails/FilePath:
   EnforcedStyle: arguments
+# Spec blocks always get lengthy
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+# Save some DB hits with multiple expectations
+RSpec/MultipleExpectations:
+  Max: 3

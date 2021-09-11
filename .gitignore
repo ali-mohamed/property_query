@@ -7,6 +7,9 @@
 # Database config file
 config/database.yml
 
+# Ignore Schema file
+db/schema.rb
+
 # Ignore bundler config.
 /.bundle
 
