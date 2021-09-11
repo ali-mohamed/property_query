@@ -1,0 +1,8 @@
+en:
+  activemodel:
+    attributes:
+      properties/list_properties:
+        lng: 'Longitude'
+        lat: 'Latitude'
+        property_type: 'Property Type'
+        marketing_type: 'Marketing Type'

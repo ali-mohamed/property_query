@@ -1,0 +1,5 @@
+en:
+  errors:
+    models:
+      properties/list_properties:
+        not_found: 'No data found for given location'
